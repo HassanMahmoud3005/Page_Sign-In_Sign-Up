@@ -1,0 +1,62 @@
+body {
+  background-color: #24353f;
+}
+
+.sign-in {
+  background-color: #24353f;
+
+  filter: drop-shadow(0 0 10px black);
+}
+
+.sign-in h1 {
+  color: #1aa2b8;
+}
+
+.sign-in input {
+  background-color: #24353f;
+  color: #999;
+
+}
+.sign-in input::placeholder {
+  color: #999;
+}
+
+.sign-in button {
+  border: 0;
+  outline: 1px solid #1aa2b8;
+  background-color: #24353f;
+  border-radius: 5px;
+  color: #1aa2b8;
+}
+
+.sign-in button:focus{
+  outline: 1px solid #1aa2b8;
+  background-color: #24353f;
+  border-radius: 5px;
+}
+.sign-in button:hover {
+  background-color: #1aa2b8;
+  color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/me.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <script src="js/aos.js"></script>
+  </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
+
+
+
+
+<div class="sign-up text-center my-5 m-auto p-5" style="width: 65%;">
+  <h1 class="m-auto">Smart Signin System</h1><br>
+  <div>
+  <input type="text" placeholder="Enter your name" class="form-control" id="nameSignUp" oninput="regexNameSign()">
+  <div class="text-start pb-3" style="color: #1aa2b8; height: 0;">Enter the first capital letter</div>
+
+  <div id="nameValid" class="text-start  d-none pt-2 pb-3" style="color: red;height:0">name is valid</div>
+  <div id="nameCorrect" class="text-start  d-none pt-2 pb-3" style="color: greenyellow;height:0">name is correct</div>
+  <br>
+  <input type="email" placeholder="Enter your email" class="form-control" id="emailSignUp" oninput="regexEmailSign()">
+  <div class="text-start pb-3" style="color: #1aa2b8; height: 0;">Example@example.com</div>
+
+  <div id="emailValid" class="text-start  d-none pt-2 pb-3" style="color: red;height:0">email is valid</div>
+  <div id="emailCorrect" class="text-start  d-none pt-2 pb-3" style="color: greenyellow;height:0">email is correct</div>
+  <br>
+  <input type="password" placeholder="Enter your password" class="form-control" id="passwordSignUp" oninput="regexPasswordSign()" >
+  <div class="text-start pb-3" style="color: #1aa2b8; height: 0;white-space: nowrap;">Enter 8 to 11 password number</div>
+  <div id="passwordValid" class="text-start  d-none pt-2 pb-3" style="color: red;height:0">password is valid</div>
+  <div id="passwordCorrect" class="text-start  d-none pt-2 pb-3" style="color: greenyellow;height:0">password is correct</div>
+  <br>
+  
+  <button class="w-100 py-2 " type="submit" id="btnSignUp" onclick="submitSignUp()"> Sign Up</button><br><br>
+  <div id="exite" class=" d-none pb-3" style="color: red; ">email already exists</div>
+  <div id="incorrectSignUp" class=" d-none pb-3" style="color: red; ">All inputs is required</div>
+  <p id="successSignUp" class=" d-none" style="color: greenyellow;">Success</p>
+</div>
+  <p> <span class="text-white">You have an account?</span> <a href="index.html" class="text-white text-decoration-none">Sign In</a></p>
+  </div>
+
+
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/signup.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/welcome.js"></script>
+
+    
+  </body>
+</html>
